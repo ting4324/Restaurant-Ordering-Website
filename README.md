@@ -3,7 +3,6 @@ The Brewhouse is a responsive restaurant ordering website created as a school pr
 Features:
 Interactive Menu: Browse through food and drink categories.
 Customizable Orders: Add, modify, or remove items from the cart.
-Responsive Design: Optimized for both desktop and mobile devices.
 Order Summary: Review items before placing an order.
 
 This is a school project done by 5 members including me.
