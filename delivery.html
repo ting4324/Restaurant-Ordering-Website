@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Progressive Form | Multi Steps Form</title>
+	<link rel="stylesheet" type="text/css" href="delivery.css">
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="footer.css">
+</head>
+<body>
+	<!--Navigation bar section-->
+
+    <header class="header">
+        <a href="home.html" class="logo">
+            <img src="images/logo1 transparent big.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="booking form.html">Reservation</a>
+            <a href="faqmain.html">Support</a>
+			<a href="feedback.html">Feedback</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <a href="cart.html"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
+            <a href="login.html"><div class="fa-regular fa-user" id="user-btn"></div></a>
+            <div class="fas fa-bars" id="menu-btn" ></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Search Here">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+        
+
+    </header>
+
+<div class="wrapper">
+	<div class="header">
+		<ul>
+			<li class="active form_1_progessbar">
+				<div>
+					<p>1</p>
+				</div>
+				<ul>&nbsp&nbsp&nbsp&nbspInfo</ul>
+			</li>
+			<li class="form_2_progessbar">
+				<div>
+					<p>2</p>
+				</div>
+				<ul>Remarks</ul>
+			</li>
+			<li class="form_3_progessbar">
+				<div>
+					<p>3</p>
+				</div>
+				<ul>Address</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="form_wrap">
+		<div class="form_1 data_info">
+			<h2>Personal Info</h2>
+			<form>
+				<div class="form_container">
+					<div class="input_wrap">
+						<label for="fname">First Name</label>
+						<input type="text" name="fname" class="input" id="fname" >
+					</div>
+					<div class="input_wrap">
+						<label for="lname">Last Name</label>
+						<input type="text" name="lname" class="input" id="lname">
+					</div>
+					<div class="input_wrap">
+						<label for="phone">Phone Number</label>
+						<input type="tel" placeholder="XXX-XXX-XXXX" name="phone" class="input" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="form_2 data_info" style="display: none;">
+			<h2>Order Remarks</h2>
+			<form>
+				<div class="form_container">
+					<div class="input_wrap">
+						<label for="remarks">Order Remarks (Optional)</label>
+						<input type="text" name="remarks" placeholder="Eg. Drinks without Ice" class="input" id="remarks">
+					</div>
+				</div>
+			</form>
+		</div>
+
+
+
+	
+		<div class="form_3 data_info" style="display: none;">
+			<h2>Order Address & Time</h2>
+			<form action="summary.html">
+				<div class="form_container">
+					<div class="input_wrap">
+						<label for="address">Full Address</label>
+						<input type="text" name="address" class="input" id="address" required>
+
+						<label for="state">State</label>
+						<select class="options" id="state" required>
+							<option >--Select States--</option>
+							<option>Johor</option>
+							<option>Kedah</option>
+							<option>Kelantan</option>
+							<option>Malacca</option>
+							<option>Negeri Sembilan</option>
+							<option>Pahang</option>
+							<option>Penang</option>
+							<option>Perak</option>
+							<option>Perlis</option>
+							<option>Sabah</option>
+							<option>Sarawak</option>
+							<option>Selangor</option>
+							<option>Terrengganu</option>
+						</select>
+
+						<label for="designation">City</label>
+						<input type="text" name="Designation" class="input" id="designation" placeholder="Eg. Puchong" pattern="[A-Z\sa-z]{3,20}" required>
+						
+						<label for="zip">Zip Code</label>
+						<input type="text" name="zip" class="input" id="zip" placeholder="Eg. 47100" pattern="(\d{5})" required>
+
+						<label for="date">Delivery Date:</label>
+						<input type="date" id="date" name="date" required>
+						<br>
+
+						<label for="time">Delivery Time:</label>
+						<input type="time" id="time" name="time" required>
+					</div>
+					<input type="submit" onclick="passvalue();">
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="btns_wrap">
+		<div class="common_btns form_1_btns">
+			<button type="button" onclick="allLetter(fname),allLetter1(lname),phonenumber(phone)" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+		</div>
+		<div class="common_btns form_2_btns" style="display: none;">
+			<button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+			<button type="button" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+		</div>
+		<div class="common_btns form_3_btns" style="display: none;">
+			<div class="b3">
+			<button type="submit" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col">
+				<h4>Company</h4>
+				<ul>
+					<li><a href="about.html">About us</a></li>
+					<li><a href="">Contact us</a></li>
+					<li><a href="feedback.html">Feedback</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>About us</h4>
+				<ul>
+					<li><a href="faqmain.html">FAQ</a></li>
+					<li><a href="dinein.html">Dine in</a></li>
+					<li><a href="orders&delivery.html">Order & Delivery</a></li>
+					<li><a href="payments&security.html">Payment & Security</a></li>
+
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Online shop</h4>
+				<ul>
+					<li><a href="menu.html">Menu</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Follow us</h4>
+				<div class="social-links">
+					<a href="https://www.facebook.com/profile.php?id=100086430368598" target="_blank" id="fb"><i class="fab fa-facebook-f"></i></a> &nbsp;
+					<a href="https://github.com/BrewHouse22" id="twitter" target="_blank"><i class="fab fa-github"></i></a> &nbsp;
+					<a href="https://instagram.com/thebrewhouse2022?r=nametag" id="insta" target="_blank"><i class="fab fa-instagram"></i></a> &nbsp;
+				</div>
+			</div>
+			<div class="footer-col">
+				<h4>Locate us</h4>
+				<div class="social-links">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.53663221214!2d101.72591861475746!3d3.2155572976588167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20College%20(TAR%20UC)!5e0!3m2!1sen!2smy!4v1664632361704!5m2!1sen!2smy" 
+					width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="delivery.js"></script>
+<script src="header.js"></script>
+<script>
+
+function passvalue()
+{
+	var a=document.getElementById("address").value;
+	var b=document.getElementById("phone").value;
+	var c=document.getElementById("lname").value;
+	var d=document.getElementById("fname").value;
+	var e=document.getElementById("designation").value;
+	var f=document.getElementById("state").value;
+	var g=document.getElementById("remarks").value;
+	var h=document.getElementById("time").value;
+	var x=document.getElementById("date").value;
+	var y=document.getElementById("zip").value;
+
+	localStorage.setItem("address",a);
+	localStorage.setItem("phone",b);
+	localStorage.setItem("lname",c);
+	localStorage.setItem("fname",d);
+	localStorage.setItem("designation",e);
+	localStorage.setItem("state",f);
+	localStorage.setItem("remarks",g);
+	localStorage.setItem("time",h);
+	localStorage.setItem("date",x);
+	localStorage.setItem("zip",y);
+
+	return false;
+
+}
+</script>
+
+</body>
+</html>

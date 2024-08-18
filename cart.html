@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/cart.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/cash-currency" rel="stylesheet">
+
+    <title>Cart</title>
+    <style>
+      @import url('http://fonts.cdnfonts.com/css/cash-currency');
+  </style>
+  </head>
+  
+  <body>
+    
+    <div class="cart_container">
+    <div class="head">
+      <div class="head-content">
+        <div class="left-area">
+        </div>
+<!--Progress Bar section (cart-> terms -> info)-->
+        <div class="progress-section">
+          <div class="progressbar">
+            <div class="progress" id="progress"></div>
+            <div class="progress-step active" data-title="Cart"></div>
+            <div class="progress-step" data-title="Terms & Conditions"></div>
+            <div class="progress-step" data-title="Info"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form action="#" class="form">
+<!-- Product Name and Details -->
+      <div class="form-step active">
+        <div class="shop_content">
+          <span class="fw-bold" style="font-family: alegreya;">Food Cart</span>
+          <span class="currency">
+             <span></span></span>
+
+          <div class="shop-product">
+            <table cellspacing="0" cellpadding="0">
+              <thead>
+                <tr class="shop_head">
+                  <td style="width: 580px; text-indent: 20px">
+                    Food Products
+                  </td>
+                  <td style="width: 120px" class="cen">Price</td>
+                  <td style="width: 150px" class="cen">Quantity</td>
+                  <td style="width: 160px" class="cen">Total</td>
+                  <td style="width: 120px" class="cen">Remove</td>
+                </tr>
+              </thead>
+              <tbody class="cartitemList" id="cartitemList" >
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="checkout_section">
+         <a href="menu.html"> <span class="cnt_shping" style="font-family: alegreya;"
+            >Continue Ordering <i class="arrow right"></i
+          ></span> </a>
+          <div class="left-checkout-area">
+            <span class="chsed_item" >You Choose <b>0</b> items</span>
+            <span class="ttl_itm" >Total : <b>RM 0.00</b></span>
+            <input type="submit" id="pickup" value="Pick Up" class="btn" />
+            <a href="#" class="btn btn-next with-20 ml-auto" 
+              >Proceed To Checkout</a
+            >
+          </div>
+        </div>
+      </div>
+      <!--Terms and conditions page-->
+      <div class="form-step">
+        <label for="text">Terms & Conditions:</label>
+        <div class="input-group">
+          <h3 style="font-family: Allerta Stencil;">Through our Platform, any contract for the supply of Food and Beverages is between you and the Merchant; any contract for the supply of delivery services is between you and BigDelivery. By placing order through our Platform, you agree to take particular care when providing us with your details and warrant that these details are accurate and complete at the time of ordering, also ensure that you provide an accurate address and telephone number to ensure that your Meals arrive to the correct location as this is how we will communicate with you about your Order. If you do not open the door or respond to telephonic correspondence within 5 minutes upon arrival of our delivery drivers, we reserve the right to leave the premises, and you will be charged for the Meal. The delay that caused by your negligence will affect the next service user. You also warrant that the credit or debit card details that you provided are your own credit or debit card and that you have sufficient funds to make the payment. We will take extra care and effort to keep the details of your order and payment secure, but in the absence of negligence on our part we cannot be held liable for any loss you may suffer if a third party procures unauthorized access to any data you provide when accessing or ordering from the Platform. You warrant that the Food Delivery, Goods and Services purchased from this Platform are intended for your use only and not for resale. You are acting as principal and not as agent for another party when receiving the Services.</h3><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        
+        <div class="btns-group">
+          <a href="#" class="btn btn-pre">Previous</a>
+          <input type="submit" id="checkout" value="Agree" class="btn" />
+        </div>
+      </div>
+    </form>
+  </div>
+  </body>
+  <!--Javascript-->
+  <script type="module" src="./scripts/cart.js"></script>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" style= "background: #FFD5AA;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./styles/menu.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/cash-currency');
+    </style>
+    <title>Menu</title>
+</head>
+    <!--Navigation bar section-->
+    <header class="header">
+        <a href="home.html" class="logo">
+            <img src="images/logo1 transparent big.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="booking form.html">Reservation</a>
+            <a href="faqmain.html">Support</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="minigame.html">Contact us</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <a href="cart.html"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
+            <a href="login.html"><div class="fa-regular fa-user" id="user-btn"></div></a>
+            <div class="fas fa-bars" id="menu-btn" ></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Search Here">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+        
+
+    </header>
+<!--Filter selection part-->
+<body>
+    <div id="navbar"></div>
+    <div id="main_content" style="background: #FFD5AA;">
+        <div id="heading" style="background: #FFD5AA; "><h1 >Menu</h1></div>
+        <div id="master_content" style="background: #FFD5AA;">
+            <div id="filter_item">
+                <div id="filter">
+                    <div id="days"><p class="filtr">Selection:</p><button onclick="arrived()">Starter</button><button onclick="arrived2()">Pizza</button><button onclick="arrived3()">Pasta</button><button onclick="arrived4()">Sandwich</button><button onclick="arrived7()">Salad</button><button onclick="arrived5()">Coffee</button><button onclick="arrived6()">Other beverages</button></div>
+                   <div id="filter1"><p class="filtr">Types:</p><select name="" id="types" onchange="filtypes()">
+                    <option value="Default">Choose From</option>
+                    <option value="Foods">Foods</option>
+                    <option value="Beverages">Beverages</option>
+                   </select>
+                   <input type="checkbox" id="sale" onchange="funsale()"><label for="" >On sale</label>
+                   <p class="filtr">Price</p>
+                   <input type="number" id="min" placeholder="Min" oninput="showfun()">
+                   <h5>-</h5>
+                   <input type="number" id="max" placeholder="Max" oninput="showfun()">
+                  <div id="btn"></div>
+                   </div>
+                    <div id="sort"><p class="filtr">Sort:</p><button onclick="prc()">Price (Low to High)</button></div>
+                </div>
+<!--Display Item Parts-->
+                <div id="item" >
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="minigame.html">Contact us</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                            <li><a href="membership.html">Membership</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>About us</h4>
+                        <ul>
+                            <li><a href="faqmain.html">FAQ</a></li>
+                            <li><a href="dinein.html">Dine in</a></li>
+                            <li><a href="orders&delivery.html">Order & Delivery</a></li>
+                            <li><a href="payments&security.html">Payment & Security</a></li>
+        
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Online shop</h4>
+                        <ul>
+                            <li><a href="menu.html">Menu</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=100086430368598" target="_blank" id="fb"><i class="fab fa-facebook-f"></i></a> &nbsp;
+                            <a href="https://github.com/BrewHouse22" id="twitter" target="_blank"><i class="fab fa-github"></i></a> &nbsp;
+                            <a href="https://instagram.com/thebrewhouse2022?r=nametag" id="insta" target="_blank"><i class="fab fa-instagram"></i></a> &nbsp;
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Locate us</h4>
+                        <div class="social-links">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.53663221214!2d101.72591861475746!3d3.2155572976588167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20College%20(TAR%20UC)!5e0!3m2!1sen!2smy!4v1664632361704!5m2!1sen!2smy" 
+                            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</html>
+
+
+<!--Javascript part-->
+<script src="./scripts/fooditem.js"></script>
+<script src="https://kit.fontawesome.com/2ef51f6b1b.js" crossorigin="anonymous"></script>
+<script>
+    let data = JSON.parse(localStorage.getItem("menu"))
+
+append(data)
+
+
+
+//This function is append the data from fooditem.js and display it on the menu page
+function append(data){
+    let parent = document.querySelector("#item");
+    console.log(data)
+    parent.innerHTML="";
+
+    data.forEach((el)=>{
+        let div = document.createElement('div'); 
+        div.addEventListener("click",function(){
+            detail(el);
+        })
+
+        let img = document.createElement('img');  //show image 
+        img.src = el.imgURL;
+   
+        let name = document.createElement('p'); //show item name
+        name.innerText = el.name;
+   
+        let price = document.createElement('h3'); //show item price
+        price.innerText = `RM${el.price}`;
+   
+        let div2 = document.createElement("div");
+        div2.setAttribute("class","logo")
+
+   
+      div.append(img,name,price);
+   
+      parent.append(div)
+
+     
+     
+
+    })
+
+
+}
+
+//This function is calculate the details of the data 
+function detail(data){
+
+    let bag = ""; 
+    // keep looping the price data (if i=1 and data is RM10 then it will take the second value cause it start from first array, if i=0 then it will take first and remaining value)
+    for(let i=0;i<data.price.length;i++){ 
+        bag+=data.price[i]
+    }
+    let x = Number(bag)
+
+    let bag2 = ""; //looping name data, same concept as the price data
+    for(let i=0;i<data.name.length;i++){
+        if(data.name[i]==" "){
+            break;
+        }
+        bag2+=data.name[i];
+    }
+
+    let obj ={     //declare obj data
+        title: data.name,
+        description:data.description,
+        price:x,
+        rating:data.ratings,
+        image:data.imgURL,
+        quantity:1,
+        item_code:Math.floor((Math.random() * 999999) + 1),
+        brand: bag2,
+        types:data.types
+
+
+    }
+console.log(obj)
+    localStorage.setItem("Item_Details",JSON.stringify(obj))
+    window.location.href="product_detail.html"
+}
+
+
+
+
+function filtypes(){ //This function is to seperate the value of foods and beverages from fooditem.js from types data "foods" and "beverages"
+
+    console.log("")
+
+    let query = document.querySelector("#types").value;
+    console.log(query)
+
+if(query=="Default"){
+    let newdata = data;
+    append(newdata)
+}
+else{
+    let newdata = data.filter(function(el){
+        if(el.types==query){
+            return el;
+        }
+    })
+ append(newdata)
+
+}
+}
+
+//This functions is to show the button for min and max
+function showfun(){
+    let btn = document.querySelector("#btn")
+    btn.innerHTML=`<button onclick="minmax()">OK</button>`   
+}
+
+
+
+//This function part is to seperate from starter to other beverages from function arrived,arrived2,arrived3,arrived4,arrived5,arrived6,arrived7 for sorting
+
+//I declare this array number 7 so that when the data matches with the arrived value from the fooditem.js which in this case arrive value 7 is starter.
+let ar7=0;       
+function arrived(){
+    ar7++;
+   if(ar7%2!=0){
+    let newdata = data.filter(function(el){
+        if(el.arrived=="7"){  //if data is equal to the arrived value from fooditem.js "7", then return
+            return el;
+        }
+    })
+    append(newdata)
+   }
+else{
+    let newdata=data;
+    append(newdata)
+}
+    
+}
+
+
+//I declare this array number 15 so that when the data matches with the arrived value from the fooditem.js which in this case arrive value 15 is pizza.
+let ar15=0;
+function arrived2(){
+    ar15++;
+   if(ar15%2!=0){
+    let newdata = data.filter(function(el){
+        if(el.arrived=="15"){
+            return el;
+        }
+    })
+    append(newdata)
+   }
+   else{
+    let newdata=data;
+    append(newdata)
+}
+}
+
+//I declare this array number 30 so that when the data matches with the arrived value from the fooditem.js which in this case arrive value 30 is pasta.
+let ar30=0;
+function arrived3(){
+    ar30++;
+    if(ar30%2!=0){
+        let newdata = data.filter(function(el){
+            if(el.arrived=="30"){
+                return el;
+            }
+        })
+        append(newdata)
+    }
+    else{
+        let newdata=data;
+        append(newdata)
+    }
+}
+
+
+//I declare this array number 20 so that when the data matches with the arrived value from the fooditem.js which in this case arrive value 20 is sandwich.
+let ar20=0;
+function arrived4(){
+    ar20++;
+    if(ar20%2!=0){
+        let newdata = data.filter(function(el){
+            if(el.arrived=="20"){
+                return el;
+            }
+        })
+        append(newdata)
+    }
+    else{
+        let newdata=data;
+        append(newdata)
+    }
+}
+
+
+//I declare this array number 35 so that when the data matches with the arrived value from the fooditem.js which in this case arrive value 35 is coffee.
+let ar35=0;
+function arrived5(){
+    ar35++;
+    if(ar35%2!=0){
+        let newdata = data.filter(function(el){
+            if(el.arrived=="35"){
+                return el;
+            }
+        })
+        append(newdata)
+    }
+    else{
+        let newdata=data;
+        append(newdata)
+    }
+}
+
+//I declare this array number 40 so that when the data matches with the arrived value from the fooditem.js which in this case arrive value 40 is other beverages.
+let ar40=0;
+function arrived6(){
+    ar40++;
+    if(ar40%2!=0){
+        let newdata = data.filter(function(el){
+            if(el.arrived=="40"){
+                return el;
+            }
+        })
+        append(newdata)
+    }
+    else{
+        let newdata=data;
+        append(newdata)
+    }
+}
+
+//I declare this array number 25 so that when the data matches with the arrived value from the fooditem.js which in this case arrive value 25 is salad.
+let ar25=0;
+function arrived7(){
+    ar25++;
+    if(ar25%2!=0){
+        let newdata = data.filter(function(el){
+            if(el.arrived=="25"){
+                return el;
+            }
+        })
+        append(newdata)
+    }
+    else{
+        let newdata=data;
+        append(newdata)
+    }
+}
+
+
+//This function is to check whether the item is on sale or not on sale
+//It will get the data from fooditem.js after sale is "yes" it will display if it is "no" it will not display
+function funsale(){
+let sale = document.querySelector("#sale");
+
+if(sale.checked){
+    newdata = data.filter(function(el){
+        if(el.sale=="yes"){   //if data is "yes",then return
+            return el;
+        }
+    })
+
+    append(newdata)
+}
+else{
+    let newdata=data;
+    append(newdata)
+}
+
+}
+
+
+//This function is to check the value of the price in between minimum and maximum value
+    function minmax(){
+
+    let min = document.getElementById('min').value;
+    let max = document.getElementById('max').value;
+    console.log(min,max)
+
+    //If min or max is empty 
+    if(min=="" || max==""){
+        alert("Enter the correct Min and Max values")
+    }
+    else{
+        let newdata = data.filter(function(el){
+            
+            let bag = "";
+            for(let i=0;i<el.price.length;i++){ //store length of price in bag array
+                bag+=el.price[i]
+            }
+            let x = Number(bag); //x equal to number of price length
+            if(x>=min && x<=max){ //if x is more than or equal to min value and x is less than or equal to max value
+                return el;
+            }
+
+        })
+        append(newdata)
+    }
+
+    }
+
+//This function is for calculating from lowest price to highest price
+    let prccnt=0; 
+
+    function prc(){
+        prccnt++;   
+        let newdata = data.sort(function(a,b){
+        let bag = "";
+
+    for(let i=0;i<a.price.length;i++){  //store the price in bag a
+        bag+=a.price[i]
+    }
+    let x = Number(bag) //x equal to the number in the bag a
+    let bag2 = ""; 
+    for(let i=0;i<b.price.length;i++){ //store the price in bag b
+        bag2+=b.price[i]
+    }
+    let y = Number(bag2) //y equal to the number in bag b
+
+            if(prccnt%2!==0){   //if prccnt modulo of 2 is not equal to zero
+                return x-y;        //bag b - bag a
+            }
+            else{
+                return y-x; // else bag a-b
+            }
+
+           })
+     
+          append(newdata)
+
+
+    }
+
+
+</script>
+

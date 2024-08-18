@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: radial-gradient(#fff,#ffd6d6);
+}
+
+
+.acontainer{
+    text-align: center;
+    padding-top: 200px;
+}
+
+.AboutImg{
+    align-items: center;
+    padding-top: 20px;
+}
+
+.AboutImg h1{
+    padding-bottom: 20px;
+}
+
+.AboutImg img{
+    border-radius: 10px;
+}
+
+.title{
+    padding-top: 60px;
+    color: #444;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.sub-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teams img{
+    height: 200px;
+    width: 200px;
+}
+
+.teams{
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.teams:hover{
+    transform: translateY(-20px);
+    background: #fff;
+    border-radius: 12px;
+}
+
+.name{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.design{
+    font-style: italic;
+    color: #888;
+}
+
+.about{
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #4e4e4e;
+}
+
+.social-links{
+    margin: 14px;
+}
+
+.social-links a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: 0.4s;
+}
+
+.social-links a:hover{
+    transform: scale(1.6);
+}
+
+.social-links a i{
+    color: #444;
+}
+
+
+
+#fb:hover{
+    transform: scale(1.4); /* hover to zoom in */
+}
+
+
+#gihub:hover{
+    transform: scale(1.4);
+}
+
+#insta:hover{
+    transform: scale(1.4);
+}
+
+#music{
+    padding-bottom: 25px;
+}
+
+#cart-btn,#user-btn,#search-btn{
+    width: 17px;
+}
+
+/* Layout */
+@media screen and (max-width:600px){
+    .teams{
+        max-width: 100%;
+    }
+}

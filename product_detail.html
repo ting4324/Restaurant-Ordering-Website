@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/product_detail.css">
+    <link rel="stylesheet" href="navyenrou.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cabin+Sketch" />
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/cash-currency" rel="stylesheet">
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/cash-currency');
+    </style>
+
+</head>
+<!--Navigation bar section-->
+<header class="header">
+    <a href="home.html" class="logo">
+        <img src="images/logo1 transparent big.png" alt="">
+    </a>
+
+    <nav class="navbar1">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="booking form.html">Reservation</a>
+        <a href="faqmain.html">Support</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <a href="cart.html" ><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
+        <a href="login.html"><div class="fa-regular fa-user" id="user-btn"></i></a>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search Here">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+</header>
+<body>
+    <!--Display item part-->
+    <div id="navbar">
+    </div>
+    <div id="content">
+        <div id="product">
+            <div id="image"></div>
+            <div id="data">
+                <h2 id="title" style="font-family:'Alegreya'; font-size: 40px;"></h2>
+                <div id="small">
+                     <span class="fa fa-star checked"></span>
+                    <p id="rating">
+                    </p>
+                    <p id="brand"></p>
+                    <p id="code"></p>
+                </div>
+                <h2 id="price" style="font-family:'Cash Currency', sans-serif;"></h2>
+                <div id="from">
+                    <p>Types:</p>
+                    <p id="from_types"></p>
+                </div>
+                <div id="qty">
+                    <p>QTY:</p>
+                    <div id="qty_button">
+                        <p id="plus">+</p>
+                        <p id="number"></p>
+                        <p id="minus">-</p>
+                    </div>
+                </div>
+                <div id="buton">
+                    <button id="btn1" style="font-family: 'Kalam';">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Description,Ratings,Reviews-->
+        <div id="below">
+            <h2 id="descrip" style="color: black;">Description</h2>
+            <h2 id="rev">Ratings</h2>
+            <h2 id="qa">Customer Reviews</h2>
+        </div>
+        <div id="below_content">
+        </div>
+    </div>
+
+</body>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="minigame.html">Contact us</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>About us</h4>
+                        <ul>
+                            <li><a href="faqmain.html">FAQ</a></li>
+                            <li><a href="dinein.html">Dine in</a></li>
+                            <li><a href="orders&delivery.html">Order & Delivery</a></li>
+                            <li><a href="payments&security.html">Payment & Security</a></li>
+        
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Online shop</h4>
+                        <ul>
+                            <li><a href="menu.html">Menu</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=100086430368598" target="_blank" id="fb"><i class="fab fa-facebook-f"></i></a> &nbsp;
+                            <a href="https://github.com/BrewHouse22" id="twitter" target="_blank"><i class="fab fa-github"></i></a> &nbsp;
+                            <a href="https://instagram.com/thebrewhouse2022?r=nametag" id="insta" target="_blank"><i class="fab fa-instagram"></i></a> &nbsp;
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Locate us</h4>
+                        <div class="social-links">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.53663221214!2d101.72591861475746!3d3.2155572976588167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20College%20(TAR%20UC)!5e0!3m2!1sen!2smy!4v1664632361704!5m2!1sen!2smy" 
+                            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</html>
+<!--Javascript part-->
+<script type="module" src="scripts/product_detail.js"></script>
+<script src="https://kit.fontawesome.com/2ef51f6b1b.js" crossorigin="anonymous"></script>

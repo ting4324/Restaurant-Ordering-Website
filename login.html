@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew House | Sign In</title>
+    <link rel="icon" href="Images/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Fontsome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+
+</head>
+<body>
+    <div id="upperbar">
+       <a href="login.html">
+        <img src="Images/logo1 transparent.png" alt="">
+       </a>
+    </div>
+    <div id="bgi">
+        <div id="signup">
+            <h3>Sign In</h3>
+            <input id="ea" type="text" placeholder="Email address">
+            <input id="pa" type="text" placeholder="Password">
+            <div id="fp">
+                <input id="cb" type="checkbox">
+                <p>Keep me signed in</p>
+                <img onclick="goog()" src="https://cdn.iconscout.com/icon/free/png-64/faqs-1895578-1604568.png" alt="">
+                <u>Forget your password?</u>
+            </div>
+            <button id="signb" onclick="signup()"><h4>Sign In</h4></button><br>
+            <button id="cna" onclick="cna()"><h4>Create a new account</h4></button>
+            <div id="fp"><hr><p>or</p><hr></div>
+            <a href="https://accounts.google.com/v3/signin/identifier?dsh=S604771885%3A1664617134101830&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AQDHYWre7dG6fnSD3Vl1tQ0GH4r1yHkN2HALy5Tw7ol0KZnVymynKlQhZ5vfJhivOYj1zacoo5Qv"
+            target="_blank">
+            <img src="https://cdn.iconscout.com/icon/free/png-64/google-152-189813.png" alt=""></a>
+        </div>
+    </div>
+
+    <!-- Footer
+    <footer class="footer">
+        <div class="container-2">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Our services</a></li>
+                        <li><a href="">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About us</h4>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Delivery</a></li>
+                        <li><a href="">Order status</a></li>
+                        <li><a href="">Payment options</a></li>
+                        <li><a href="">Returns</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100086430368598" id="fb" target="_blank"><i class="fab fa-facebook-f"></i></a> &nbsp;
+                        <a href="https://github.com/BrewHouse22" id="github" target="_blank"><i class="fab fa-github"></i></a> &nbsp;
+                        <a href="https://instagram.com/thebrewhouse2022?r=nametag" id="insta" target="_blank"><i class="fab fa-instagram"></i></a> &nbsp;
+                    </div>
+                </div>
+                 <div class="footer-col">
+                    <h4>Online shop</h4>
+                    <ul>
+                        <li><a href="">Coffee</a></li>
+                        <li><a href="">Western food</a></li>
+                    </ul>
+                </div> -->
+            <!-- </div>
+        </div> -->
+    <!-- </footer> -->
+    <p id="copyright">Copyright © 2022 Brew House All rights reserved.</p>
+</body>
+</html>
+
+<script>
+    var ar = JSON.parse(localStorage.getItem("user"))
+    let cuser=[];
+
+    function mp()
+    {
+        window.open("home.html","_self")
+    }
+
+    function cna()
+    {
+        window.open("register.html","_self")
+    }
+
+    function signup()
+    {
+        var b = document.querySelector("#ea")
+        var c = document.querySelector("#pa")
+        var e = document.querySelector("#cb")
+        if(b.value=="" || c.value=="") //|| e.checked==false)
+        {
+            alert("Please fill all the input boxes!!")
+        }
+        else if(ar)
+        {
+            var zz=0
+            for(var i = 0;i<ar.length;i++)
+            {
+                if(b.value==ar[i].email && c.value==ar[i].pass)
+                {
+                    cuser.push(ar[i]);
+                    localStorage.setItem("c_user",JSON.stringify(cuser));
+                    alert("Sign In Successful!")
+                    zz++
+                    window.open("home.html","_self")
+                    break;
+                }
+            }
+            if(zz==0)
+            {
+                alert("Incorrect Email or Password")
+            }
+        }
+        else
+        {
+            alert("Incorrect Email or Password")
+        }
+        
+    }
+</script>

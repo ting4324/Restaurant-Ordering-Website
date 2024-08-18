@@ -1,0 +1,140 @@
+@import url('https://use.typekit.net/bmu0uzb.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: congenial-light,sans-serif;
+}
+
+.fcontainer{
+    width: 100%;
+    height: 550vh;
+    background: radial-gradient(#fff,#ffd6d6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedbackbox{
+    max-width: 60vw;
+    margin: auto;
+    border-radius: 20px;
+    background: #fff;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emoji{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.emoji img{
+    width: 80px;
+    margin: 0 10px;
+}
+
+#emoji{
+    display: flex;
+    align-items: center;
+    transform: translateX(-400px);
+    transition: 0.3s;  
+}
+
+.rating .fas{
+    font-size: 40px;
+    color: #e4e4e4;
+    cursor: pointer;
+}
+
+.UserDetail{
+    padding: 25px 0px 15px 60px;
+}
+
+.UserDetail label{
+    font-size: 1em;
+}
+
+.UserDetail #email, #firstName, #lastName, #contactNumber {
+    width: 96.5%;
+    height: 6vh;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1.5px solid gray;
+    font-weight: 600;
+}
+
+table{
+    border-collapse: collapse;
+    empty-cells: hide;
+    color: black;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+table tbody td, th{
+    border: 2px solid #fff;
+    padding: 10px;
+    width: 60%;
+    color: #fff;
+    width: auto;
+    border-radius: 7px;
+}
+
+table tbody td{
+    text-align: center;
+}
+
+table tbody th{
+    font-size: 1em;
+    background: linear-gradient(to right, #e3bde7,#e07dd4);
+    color : black;
+}
+
+input[type="radio"]{
+    width: 25px;
+    height: 20px;
+}
+
+textarea{
+    padding: 10px;
+    font-size: 20px;
+    width: 670px;
+    height: 200px;
+    font-weight: 600;
+}
+
+button{
+    width: 170px;
+    height: 46px;
+    background: linear-gradient(135deg, #e3bde7 10%, #e07dd4 100%);
+    border: 2px solid #860281;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    transition: all 500ms ease;
+}
+
+button:hover{
+    cursor: pointer;
+    border: 2px solid #860281;
+    transform: scale(1.05);
+    filter: drop-shadow(0.5em 0.5em 0.5em grey)
+}
+
+.text{
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#cart-btn,#user-btn,#search-btn{
+    width: 17px;
+}

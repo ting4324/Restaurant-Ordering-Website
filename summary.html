@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="recaptcha.css" />
+		<link href='http://fonts.googleapis.com/css?family=Raleway:300,500|Arvo:700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="container">	
+			<header>	
+			</header>
+			<!--Show delivery info part-->
+			<section class="main">
+
+				<div id="rm-container" class="rm-container">
+
+					<div class="rm-wrapper">
+
+						<div class="rm-cover">
+
+							<div class="rm-front">
+								<div class="rm-content">
+
+									<div class="rm-logo"></div>
+									<h2>Brew House</h2>
+									<h3></h3>
+
+									<a href="#" class="rm-button-open">View Delivery Info</a>
+
+								</div><!-- /rm-content -->
+							</div><!-- /rm-front -->
+
+							<div class="rm-back">
+								<div class="rm-content">
+									<h4>Personal Info</h4>
+									<dl>
+										<dt>First Name</dt>
+										<dd><span id="result5"></span></dd>
+										<br>
+										<dt>Last Name</dt>
+										<dd><span id="result4"></span></dd>
+										<br>
+										<dt>Phone Number</dt>
+										<dd><span id="result3"></span></dd>
+									</dl>
+
+								</div><!-- /rm-content -->
+								<div class="rm-overlay"></div>
+
+							</div><!-- /rm-back -->
+
+						</div><!-- /rm-cover -->
+
+						<div class="rm-middle">
+							<div class="rm-inner">
+								<div class="rm-content">
+									<h4>Remarks</h4>
+									<dl>
+										<dt>Order Remarks</dt>
+										<dd><span id="result2"></span></dd>
+									</dl>
+								</div><!-- /rm-content -->
+								<div class="rm-overlay"></div>
+							</div><!-- /rm-inner -->
+						</div><!-- /rm-middle -->
+
+						<div class="rm-right">
+
+							<div class="rm-front">
+								
+							</div>
+
+							<div class="rm-back">
+								<span class="rm-close">Close</span>
+								<div class="rm-content">
+									<h4>Address & Time</h4>
+									<dl>
+										<dt>Delivery Address</dt>
+										<dd><span id="result"></span></dd>
+										<br>
+										<dt>State</dt>
+										<dd><span id="result7"></span></dd>
+										<br>
+										<dt>City</dt>
+										<dd><span id="result6"></span></dd>
+										<br>
+										<dt>Zip</dt>
+										<dd><span id="result8"></span></dd>
+										<br>
+										<dt>Delivery Date</dt>
+										<dd><span id="resulta"></span></dd>
+										<br>
+										<dt>Delivery Time</dt>
+										<dd><span id="result9"></span></dd>
+									</dl>
+									<div class="rm-order">
+										<p><strong>Delivery Arrival Time Depends on the Locations.</strong> Contact Us for More Info. <strong>Sorry for the inconvenience.</strong></p>
+									</div>
+								</div><!-- /rm-content -->
+							</div><!-- /rm-back -->
+
+						</div><!-- /rm-right -->
+					</div><!-- /rm-wrapper -->
+
+				</div><!-- /rm-container -->
+
+			</section>
+					
+        </div>
+
+
+		<!--Javascript part-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"> //for 3d effects</script> /
+        <script type="text/javascript" src="js/summary.js"></script>
+		<script type="text/javascript">
+			//Function to open the delivery info
+			$(function() {
+
+				Menu.init();
+			
+			});
+		</script>
+        <script>
+			//Function to get value from delivery page and display the value
+            document.getElementById("result").innerHTML=localStorage.getItem("address")
+            document.getElementById("result2").innerHTML=localStorage.getItem("remarks")
+            document.getElementById("result3").innerHTML=localStorage.getItem("phone")
+            document.getElementById("result4").innerHTML=localStorage.getItem("lname")
+            document.getElementById("result5").innerHTML=localStorage.getItem("fname")
+            document.getElementById("result6").innerHTML=localStorage.getItem("designation")
+            document.getElementById("result7").innerHTML=localStorage.getItem("state")
+            document.getElementById("result8").innerHTML=localStorage.getItem("zip")
+            document.getElementById("result9").innerHTML=localStorage.getItem("time")
+            document.getElementById("resulta").innerHTML=localStorage.getItem("date")
+        </script>
+    </body>
+	<!--Recaptcha part-->
+	<div class="center">
+        <div id="captchaBackground">
+			<div class="cap">
+			<label>Complete Recaptcha for Payment</label>
+			</div>
+            <canvas id="captcha">captcha text</canvas>
+            <input id="textBox" type="text" name="text">
+            <div id="buttons">
+                <input id="submitButton" type="submit">
+                <button id="refreshButton" type="submit">Refresh</button>
+            </div>
+            <span id="output"></span>
+        </div>
+    </div>
+    <script src="recaptcha.js"></script>
+</html>

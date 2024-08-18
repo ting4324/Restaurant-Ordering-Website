@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mini Game</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+        <link rel="stylesheet" href="minigame.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="https://use.typekit.net/bmu0uzb.css">
+    </head>
+    <body>
+
+        <!--Navigation bar section-->
+
+  <header class="header">
+    <a href="home.html" class="logo">
+        <img src="images/logo1 transparent big.png" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="booking form.html">Reservation</a>
+        <a href="faqmain.html">Support</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="#">Contact us</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <a href="cart.html"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
+        <a href="login.html"><div class="fa-regular fa-user" id="user-btn"></div></a>
+        <div class="fas fa-bars" id="menu-btn" ></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search Here">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+</header>
+
+        <div class="contact-section">
+
+            <div class="container-left">
+
+                <div class="contact-des">
+                    <p>For any enquitry, you can contact us by </p>
+
+                    <div class="contact-box">
+                        <h1>Email</h1>
+                        <a href="mailto:brewhouse@gmail.com">brewhouse@gmail.com</a>
+                    </div>
+
+                    <div class="contact-box">
+                        <h1>Phone number</h1>
+                        <p>012-34567890</p>
+                    </div>
+            </div>
+
+            <div class="container-right">
+
+                    <div class="contact-box">
+                        <h1>Our location</h1>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.146529397249!2d101.7193525258027!3d3.2155572625407998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20College%20(TAR%20UC)!5e0!3m2!1sen!2smy!4v1664706948530!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+
+            </div>
+        </div>
+
+        <!--Mini game-->
+
+        <div class="Minicontainer">
+
+            <div class="header2">
+
+                <h1>Memory Game</h1>
+
+                <h2>Stand a chance to win a voucher!</h2>
+            </div>
+
+            <section class="score-panel">
+
+                <h3>Score Panel</h3>
+
+                <ul id="star-rating" class="star-rating">
+
+                    <li class="star"><i class="fa fa-star"></i></li>
+                    <li class="star"><i class="fa fa-star"></i></li>
+                    <li class="star"><i class="fa fa-star"></i></li>
+
+                </ul>
+
+                <span class="moves-counter">0</span> Moves
+
+                <div class="timer-Minicontainer">
+                    <span class="timer"><i class="fa fa-hourglass-start"></i> Timer: 00:00</span>
+                </div>
+
+                <div class="reset">
+                    <button class="btn reset-btn">Reset <i class="fa fa-repeat"></i></button>
+                </div>
+            </section>
+
+            <section class="win-game-modal">
+
+                <div id="modal" class="modal">
+
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Congratulations!</h2>
+                        <p>Show this bar code when you dine-in to get 15% discount !</p>
+                        <img class="modal-img" src="barcode.jpg">
+                        <button class="btn play-again-btn">Play Again?</button>
+                    </div>
+
+                </div>
+            </section>
+
+            <ul class="deck"></ul>
+        </div>
+        <script src="header.js"></script>
+        <script src="minigame.js"></script>
+    </body>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="minigame.html">Contact us</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="faqmain.html">FAQ</a></li>
+                        <li><a href="dinein.html">Dine in</a></li>
+                        <li><a href="orders&delivery.html">Order & Delivery</a></li>
+                        <li><a href="payments&security.html">Payment & Security</a></li>
+    
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online shop</h4>
+                    <ul>
+                        <li><a href="menu.html">Menu</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100086430368598" target="_blank" id="fb"><i class="fab fa-facebook-f"></i></a> &nbsp;
+                        <a href="https://github.com/BrewHouse22" id="twitter" target="_blank"><i class="fab fa-github"></i></a> &nbsp;
+                        <a href="https://instagram.com/thebrewhouse2022?r=nametag" id="insta" target="_blank"><i class="fab fa-instagram"></i></a> &nbsp;
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Locate us</h4>
+                    <div class="social-links">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.53663221214!2d101.72591861475746!3d3.2155572976588167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20College%20(TAR%20UC)!5e0!3m2!1sen!2smy!4v1664632361704!5m2!1sen!2smy" 
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>

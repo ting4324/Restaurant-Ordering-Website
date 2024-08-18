@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pick Up</title>
+	<link rel="stylesheet" type="text/css" href="pickup.css">
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+	<!--Navigation bar section-->
+
+    <header class="header">
+        <a href="home.html" class="logo">
+            <img src="images/logo1 transparent big.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="booking form.html">Reservation</a>
+            <a href="faqmain.html">Support</a>
+			<a href="feedback.html">Feedback</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <a href="cart.html"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
+            <a href="login.html"><div class="fa-regular fa-user" id="user-btn"></div></a>
+            <div class="fas fa-bars" id="menu-btn" ></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Search Here">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+        
+
+    </header>
+	<main>
+
+		<div class="intro">
+			<h1 class="logo-header">
+				<span class="logo">Pick&nbsp</span><span class="logo">Up&nbsp</span><span class="logo">Service</span>
+			</h1>
+		</div>
+	
+	<div class="main" id="top">
+		<h2>Save both time and cost with our digital dashboard <br> and wide variety of delivery services</h2>
+		<a href="#data1">Pick Up</a>
+		</div> 
+	<div class="wrapper">
+		<div class="pickupheader">
+			<ul>
+				<li class="active form_1_progessbar">
+					<div>
+						<p>I</p>
+					</div>
+					<ul>&nbsp&nbsp&nbsp&nbspDetails</ul>
+				</li>
+				<li class="form_2_progessbar">
+					<div>
+						<p>II</p>
+					</div>
+					<ul>Pickup</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="form_wrap">
+			<div class="form_1 data_info" id="data1">
+				<h2>Pick up Details</h2>
+				<form>
+					<div class="form_container">
+						<div class="input_wrap">
+							<label for="fname">First Name</label>
+							<input type="text" name="fname" class="input" id="fname" >
+						</div>
+						<div class="input_wrap">
+							<label for="lname">Last Name</label>
+							<input type="text" name="lname" class="input" id="lname">
+						</div>
+						<div class="input_wrap">
+							<label for="phone">Phone Number</label>
+							<input type="tel" placeholder="XXX-XXX-XXXX" name="phone" class="input" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+							
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="form_2 data_info" style="display: none;">
+				<h2>Select Time</h2>
+				<form>
+					<div class="form_container">
+						<div class="list">
+							<div class="input_wrap">
+								<label for="experience">Cutlery</label>
+								<select class="options">
+									<option>--Select Cutlery--</option>
+									<option>Yes</option>
+									<option>No</option>
+	
+								</select>
+							</div>
+							<div class="input_wrap">
+								<label for="experience"> Pickup Time</label>
+								<select class="options">
+									<option>--Select Hour--</option>
+									<option>10: 00</option>
+									<option>11: 00</option>
+									<option>12: 00</option>
+									<option>13: 00</option>
+									<option>14: 00</option>
+									<option>15: 00</option>
+									<option>16: 00</option>
+									<option>17: 00</option>
+									<option>18: 00</option>
+								</select>
+							</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	
+		<div class="btns_wrap">
+			<div class="common_btns form_1_btns">
+				<button type="button" onclick="allLetter(fname),allLetter1(lname),phonenumber(phone)" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+			</div>
+			<div class="common_btns form_2_btns" style="display: none;">
+				<button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+				<button type="button" class="btn_done">Done</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal_wrapper">
+		<div class="shadow"></div>
+		<div class="success_wrap">
+			<span class="modal_icon"><ion-icon name="checkmark-sharp"></ion-icon></span>
+			<p>Thank you for using our services.</p>
+		</div>
+	</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col">
+				<h4>Company</h4>
+				<ul>
+					<li><a href="about.html">About us</a></li>
+					<li><a href="minigame.html">Contact us</a></li>
+					<li><a href="feedback.html">Feedback</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>About us</h4>
+				<ul>
+					<li><a href="faqmain.html">FAQ</a></li>
+					<li><a href="dinein.html">Dine in</a></li>
+					<li><a href="orders&delivery.html">Order & Delivery</a></li>
+					<li><a href="payments&security.html">Payment & Security</a></li>
+
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Online shop</h4>
+				<ul>
+					<li><a href="menu.html">Menu</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Follow us</h4>
+				<div class="social-links">
+					<a href="https://www.facebook.com/profile.php?id=100086430368598" target="_blank" id="fb"><i class="fab fa-facebook-f"></i></a> &nbsp;
+					<a href="https://github.com/BrewHouse22" id="twitter" target="_blank"><i class="fab fa-github"></i></a> &nbsp;
+					<a href="https://instagram.com/thebrewhouse2022?r=nametag" id="insta" target="_blank"><i class="fab fa-instagram"></i></a> &nbsp;
+				</div>
+			</div>
+			<div class="footer-col">
+				<h4>Locate us</h4>
+				<div class="social-links">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.53663221214!2d101.72591861475746!3d3.2155572976588167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20College%20(TAR%20UC)!5e0!3m2!1sen!2smy!4v1664632361704!5m2!1sen!2smy" 
+					width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="pickup.js"></script>
+<script type="text/javascript" src="intro2.js"></script>
+<script src="header.js"></script>
+
+</body>
+</html>

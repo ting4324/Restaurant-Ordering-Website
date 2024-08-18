@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: congenial-light,sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    padding-top: 100px;
+    background-color:#FFD5AA;
+}
+
+body{
+    background: #777;
+    margin: 0;
+    text-align: center;
+}
+
+.contact-section{
+    margin-top: 130px;
+    background-color:#FFD5AA;
+}
+
+.contact-section .contact-des p{
+    font-size: 20px;
+}
+
+.contact-box h1{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.contact-box a{
+    font-size: 20px;
+    margin-top: 50px;
+    color: black;
+}
+
+.contact-box a:hover{
+    color: #604d3b;
+}
+
+.contact-box p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.contact-box iframe{
+    box-shadow: 5px 0px 16px 0px rgba(0 0 0 / 20%);
+    margin-top: 20px;
+}
+
+.header2{
+    margin-top: 120px;
+}
+
+.Minicontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.5em;
+    margin-bottom: 50px;
+    font-size: 8px;
+}
+
+ul > li{
+    list-style: none;
+}
+
+.card, .reset-btn{
+    cursor: pointer;
+}
+
+.btn{
+    border-radius: 1em;
+    border: none;
+    color: #fff;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    padding: 0.8em;
+}
+
+h1{
+    font-size: 3.5em;
+    font-weight: 600;
+    color: #947659;
+}
+
+h2{
+    font-size: 2.5em;
+    font-weight: 400;
+    color: #947659;
+}
+
+p{
+    font-size: 1.6em;
+}
+
+h3{
+    font-weight: 400;
+}
+
+.score-panel{
+    font-size: 1.4em;
+    padding: 1em 0 2em;
+}
+
+.star-rating > li{
+    display: inline-block;
+    padding: 0.5em;
+}
+
+.moves-counter{
+    padding: 0.5em;
+}
+
+.reset-btn{
+    background: #947659;
+}
+
+.timer-Minicontainer{
+    background: #fff;
+    border-radius: 0.5em;
+    color: #000;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.timer{
+    font-size: 1em;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(46, 61, 73);
+    background-color: rgba(46, 61, 73, 0.6);
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 5% auto;
+    border: 0.8em solid #fc4;
+    padding-right: 2em;
+    width: 80%;
+}
+
+.close{
+    align-self: flex-end;
+    color: #947659;
+    font-size: 5em;
+}
+
+.close:hover, .close:focus{
+    color: #604d3b;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-img{
+    display: inline-block;
+    margin: 1em 0 1em;
+    width: 20em;
+}
+
+p.stats{
+    font-weight: 600;
+}
+
+p.stats:last-child{
+    margin-bottom: 1em;
+}
+
+.play-again-btn{
+    background: #947659;
+    margin-bottom: 1em;
+}
+
+.deck{
+    background: linear-gradient(to bottom, #947659, #604d3b);
+    border-radius: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 15em;
+    /* margin-bottom: 6em; */
+    padding: 0.5em;
+    width: 15em;
+}
+
+.deck, .card{
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.card{
+    background: whitesmoke;
+    border-radius: 0.5em;
+    height: 7em;
+    width: 7em;
+}
+
+img{
+    user-select: none;
+    width: 6em;
+}
+
+.deck img{
+    visibility: hidden;
+}
+
+.deck .card.flip{
+    background: #fff;
+    cursor: default;
+    transform: rotateY(180deg);
+    transition: transform 0.3s linear;
+    pointer-events: none;
+}
+
+.flip img{
+    background: #fff;
+    visibility: visible;
+}
+
+.deck .card.match{
+    background: whitesmoke;
+    visibility: visible;
+    cursor: default;
+    animation: pulse 1s;
+}
+
+.match img{
+    background: white;
+}
+
+#cart-btn,#user-btn,#search-btn{
+    width: 25px;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+
+    80%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .deck{
+        height: 50em;
+        padding: 2em;
+        width: 50em;
+    }
+
+    .card{
+        height: 10em;
+        width: 10em;
+    }
+
+    .deck img{
+        width: 9em;
+    }
+
+    .modal-content h2{
+        font-size: 4em;
+    }
+
+    .play-again-btn{
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    h1{
+        font-size: 6em;
+    }
+
+    p{
+        font-size: 2.3em;
+    }
+
+    .deck{
+        height: 70em;
+        width: 70em;
+    }
+
+    .card{
+        height: 15em;
+        width: 15em;
+    }
+
+    .deck img{
+        width: 13em;
+    }
+
+    .reset-btn{
+        font-size: 0.8em;
+    }
+
+    .footer{
+        font-size: 1.2em;
+    }
+
+    .modal-content h2{
+        font-size: 5em;
+    }
+
+    .modal-img{
+        width: 30em;
+    }
+
+    .play-again-btn{
+        font-size: 2em;
+    }
+}

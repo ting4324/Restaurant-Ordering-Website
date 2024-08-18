@@ -1,0 +1,275 @@
+*{
+    font-family: congenial-light,sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .1s linear;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    /* overflow: hidden; */
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #777;
+    border-radius: 5rem;
+}
+
+.header{
+    display: flex;
+    background: #947659;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+
+.header .logo img{
+    height: 8rem;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+.header .navbar a:hover{
+    color: #604d3b;
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+    transition: .2s linear;
+}
+
+.header .icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color: #604d3b;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .search-form{
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top; 
+}
+
+.header .search-form:active{
+    transform: scaleY(1);
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none;
+}
+
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black);
+}
+
+.header .search-form label:hover{
+    color: #604d3b;
+}
+
+body{
+    background-color: rgb(200, 197, 197);
+    min-height: 100vh;
+    align-items: center;
+}
+
+.pricing-table{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: min(1600px, 95%);
+    align-items: flex-start;
+}
+
+.pricing-card{
+    flex: 1;
+    max-width: 360px;
+    background-color: #fff;
+    margin: 123px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: black;
+    transition: .3s linear;
+    border-radius: 20px;
+    box-shadow: 0px 5px 16px 0px rgba(0 0 0 / 20%);
+}
+
+.pricing-card-header{
+    background-color: #947659;
+    display: inline-block;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s linear;
+}
+
+.pricing-card:hover .pricing-card-header{
+    box-shadow: 0 0 0 50em #947659;
+    background-color: #604d3b;
+}
+
+.price{
+    font-size: 50px;
+    font-weight: 600;
+    color: #947659;
+    margin: 40px 0;
+    transition: .2s linear;
+}
+
+.price sup .price span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.price .discount{
+    text-decoration: line-through;
+    font-size: 17px;
+} 
+
+.pricing-card:hover ,.pricing-card:hover .price{
+    color: white;
+}
+
+.pricing-card li{
+    font-size: 16px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.sub-btn{
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    border: 2px solid #947659;
+    color: #947659;
+    padding: 18px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .3s linear;
+    font-size: 15px;
+}
+
+.pricing-card:hover .sub-btn{
+    border-color: #604d3b;
+    background: #604d3b;
+    color: white;
+}
+
+.sub-btn:hover{
+    background-color: #947659;
+    color: white;
+}
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    
+}
+
+@media(max-width:768px){
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: whitesmoke;
+        background: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar a{
+        color: #947659;
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form{
+        width: 90%;
+        height: 2rem;
+    }
+
+}
+
+@media screen and (max-width:1100px) {
+    .pricing-card{
+        flex: 50%;
+    } 
+}
+
+@media(max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
+
+
+

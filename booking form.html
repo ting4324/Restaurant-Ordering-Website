@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Make A Reservation</title>
+        <link rel="stylesheet" href="booking form.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="https://use.typekit.net/bmu0uzb.css">
+    </head>
+
+    <body>
+        <!--Navigation bar section-->
+
+        <header class="header">
+            <a href="home.html" class="logoSpan">
+                <img src="images/logo1 transparent big.png" alt="">
+            </a>
+    
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="booking form.html">Reservation</a>
+                <a href="faqmain.html">Support</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="minigame.html">Contact us</a>
+            </nav>
+    
+            <div class="icons">
+                <div class="fas fa-search" id="search-btn"></div>
+                <a href="cart.html"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
+                <a href="login.html"><div class="fa-regular fa-user" id="user-btn"></div></a>
+                <div class="fas fa-bars" id="menu-btn" ></div>
+            </div>
+    
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="Search Here">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+    
+            
+    
+        </header>
+
+        <div class="intro">
+            <h1 class="logo-header">
+                <span class="logo">Re</span><span class="logo">ser</span><span class="logo">va</span><span class="logo">tion</span>
+            </h1>
+        </div>
+        <div class="main" id="top">
+            <h2>Planning for some celebration?<br> Online reservations are available for our cafe!</h2>
+            <a href="#reservation">Make A Reservation</a>
+          </div>
+
+        <section class = "banner">
+                <div class="column">
+                    <img src="images/theloaf3.jpg" alt="Almond leaf" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="images/theloaf4.jpg" alt="Black Beauty O" style="width:100%">
+                </div>
+                  <div class="column">
+                    <img src="images/theloaf5.jpg" alt="Butter Soft Loaft" style="width:100%">
+                  </div>
+            <div class = "card-container">
+                <div class = "card-img"></div> 
+                <div class = "card-content">
+                    <h4>Reservation</h4>
+                    <form>
+                        <div class = "form-row">
+                            <label>Date</label><br>
+                            <input type="date" class="booking-date" id="booking" placeholder="dd/mm/yy" required>
+                        </div>
+                        <div class = "form-row">
+                            <label>Time</label><br>
+                            <select name = "hours" required>
+                                <option value = "">Select Hour</option>
+                                <option value = "10">10: 00</option>
+                                <option value = "10">11: 00</option>
+                                <option value = "10">12: 00</option>
+                                <option value = "10">13: 00</option>
+                                <option value = "10">14: 00</option>
+                                <option value = "10">15: 00</option>
+                                <option value = "10">16: 00</option>
+                                <option value = "10">17: 00</option>
+                                <option value = "10">18: 00</option>
+                            </select>
+                        </div>
+                        <div class = "form-row">
+                            <label>Name</label><br>
+                            <input type = "text" placeholder="Full Name" pattern="[A-Z\sa-z]{3,20}" required>
+                        </div>
+                        <div class = "form-row">
+                            <label>Phone Number</label><br>
+                            <input type = "tel" placeholder="XXX-XXX XXXX" id="phone" pattern="(\d{3})-?\s?(\d{3}) ?\s?(\d{4})" required>
+                        </div>
+                        <div class = "form-row">
+                            <label>Pax</label><br>
+                            <input type = "number" placeholder="How Many Persons?" min = "1" max="10" required>
+                        </div>
+                        <div class = "form-row">
+                            <label>Remark</label><br>
+                            <input type="text" placeholder="Eg. Seat with Charging Port/Corner Seat" >
+                        </div>
+                        <div class = "form-row">  
+                            <input type = "submit" id="reservation" class="btn_done" value = "Make Reservation">
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="minigame.html">Contact us</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                            <li><a href="membership.html">Membership</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>About us</h4>
+                        <ul>
+                            <li><a href="faqmain.html">FAQ</a></li>
+                            <li><a href="dinein.html">Dine in</a></li>
+                            <li><a href="orders&delivery.html">Order & Delivery</a></li>
+                            <li><a href="payments&security.html">Payment & Security</a></li>
+        
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Online shop</h4>
+                        <ul>
+                            <li><a href="menu.html">Menu</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=100086430368598" target="_blank" id="fb"><i class="fab fa-facebook-f"></i></a> &nbsp;
+                            <a href="https://github.com/BrewHouse22" id="twitter" target="_blank"><i class="fab fa-github"></i></a> &nbsp;
+                            <a href="https://instagram.com/thebrewhouse2022?r=nametag" id="insta" target="_blank"><i class="fab fa-instagram"></i></a> &nbsp;
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Locate us</h4>
+                        <div class="social-links">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.53663221214!2d101.72591861475746!3d3.2155572976588167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20College%20(TAR%20UC)!5e0!3m2!1sen!2smy!4v1664632361704!5m2!1sen!2smy" 
+                            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="booking form.js"></script>
+        <script src="intro1.js"></script>
+        <script src="header.js"></script>
+    </body>
+</html>

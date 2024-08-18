@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <!--Navigation bar section-->
+
+    <header class="header">
+        <a href="home.html" class="logo">
+            <img src="images/logo1 transparent big.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="booking form.html">Reservation</a>
+            <a href="faqmain.html">Support</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="minigame.html">Contact us</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <a href="cart.html"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
+            <a href="login.html"><div class="fa-regular fa-user" id="user-btn"></div></a>
+            <div class="fas fa-bars" id="menu-btn" ></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Search Here">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+    </header>
+    
+    <div class="fcontainer">
+        
+        <div class="feedbackbox">
+            <div class="emoji">
+                <div id="emoji">
+                    <img src="/images/poor.png" alt="poor">
+                    <img src="/images/bad.png" alt="bad">
+                    <img src="/images/okay.png" alt="okay">
+                    <img src="/images/good.png" alt="good">
+                    <img src="/images/excellent.png" alt="excellent">
+                </div>
+            </div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <form class="type">
+                <br>
+                <div class="tittle"><p>FEEDBACK FORM</p></div>
+    
+                <div class="UserDetail"><!--Input form-->
+                    <label>Email</label>
+                    <br>
+                    <input type="text" name="email" id="email" onblur="checkemail()">
+                    <span id="emailalert"></span>
+                    <br>
+                    <br>
+                
+                    <label>First Name</label>
+                    <br>
+                    <input type="text" name="name" id="firstName">
+                    <span id="firstNamealert"></span>
+                    <br>
+                    <br>
+    
+                    <label>Last Name</label>
+                    <br>
+                    <input type="text" name="name" id="lastName">
+                    <span id="lastNamealert"></span>
+                    <br>
+                    <br>
+    
+                    <label>Contact Number</label>
+                    <br>
+                    <input type="tel" name="contactNumber" id="contactNumber" pattern="[0-9]{3}-[0-9]{7}">
+                    <span id="contactNumberalert"></span>
+                    <br>
+                    <br>
+                </div>
+
+                <br>
+                <p class="text">Please evaluate the overall quality of our restaurant.</p>
+                <br>
+                </form>
+                <table><!-- Using table to do survey form-->
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th>Strongly Disagree</th>
+                            <th>Disagree</th>
+                            <th>Neutral</th>
+                            <th>Agree</th>
+                            <th>Strongly Agree</th>
+                        </tr>
+                        <tr><!--Radio button is used to rate our service-->
+                            <th><label>I am satisfied with the service provided by the restaurant.</label></th>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>I am satisfied with the food prepared by the restaurant.</label></th>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>I am satisfied with the beverages prepared by the restaurant.</label></th>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>I am satisfied with the desgin of the restaurant.</label></th>
+                            <td><input type="radio" name="started" class="size"></td>
+                            <td><input type="radio" name="started" class="size"></td>
+                            <td><input type="radio" name="started" class="size"></td>
+                            <td><input type="radio" name="started" class="size"></td>
+                            <td><input type="radio" name="started" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>There's sufficient space for customers.</label></th>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>The price for food is reasonable.</label></th>
+                            <td><input type="radio" name="excellent" class="size"></td>
+                            <td><input type="radio" name="excellent" class="size"></td>
+                            <td><input type="radio" name="excellent" class="size"></td>
+                            <td><input type="radio" name="excellent" class="size"></td>
+                            <td><input type="radio" name="excellent" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>The price for beverages is reasonable.</label></th>
+                            <td><input type="radio" name="excellent" class="size"></td>
+                            <td><input type="radio" name="excellent" class="size"></td>
+                            <td><input type="radio" name="excellent" class="size"></td>
+                            <td><input type="radio" name="excellent" class="size"></td>
+                            <td><input type="radio" name="excellent" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>I would recommend this restaurant to my friend.</label></th>
+                            <td><input type="radio" name="excellent" class="size"></td>
+                            <td><input type="radio" name="excellent" class="size"></td>
+                            <td><input type="radio" name="excellent" class="size"></td>
+                            <td><input type="radio" name="excellent" class="size"></td>
+                            <td><input type="radio" name="excellent" class="size"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                
+            </form>
+            <br>
+            <br>
+
+            <br><!--Survey about food-->
+                <p class="text">Please evaluate the food of our restaurant.</p>
+                <br>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th>Strong Disagree</th>
+                            <th>Disagree</th>
+                            <th>Neutural</th>
+                            <th>Agree</th>
+                            <th>Strongly Agree</th>
+                        </tr>
+                        <tr>
+                            <th><label>The food served arouse appetitte.</label></th>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>The food served is well seasoned.</label></th>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>The portion of the food is sufficient enough.</label></th>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>The food served is fresh.</label></th>
+                            <td><input type="radio" name="started" class="size"></td>
+                            <td><input type="radio" name="started" class="size"></td>
+                            <td><input type="radio" name="started" class="size"></td>
+                            <td><input type="radio" name="started" class="size"></td>
+                            <td><input type="radio" name="started" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>The food selection is various.</label></th>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+
+                <br><!--Survey about beverages-->
+                <p class="text">Please evaluate the beverages of our restaurant.</p>
+                <br>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th>Strong Disagree</th>
+                            <th>Disagree</th>
+                            <th>Neutural</th>
+                            <th>Agree</th>
+                            <th>Strongly Agree</th>
+                        </tr>
+                        <tr>
+                            <th><label>The coffee served is aromatic.</label></th>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>The flavor of beverages served is good.</label></th>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>The ice in beverages served is perfectly balanced .</label></th>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>The hot beverages served is hot enough.</label></th>
+                            <td><input type="radio" name="started" class="size"></td>
+                            <td><input type="radio" name="started" class="size"></td>
+                            <td><input type="radio" name="started" class="size"></td>
+                            <td><input type="radio" name="started" class="size"></td>
+                            <td><input type="radio" name="started" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>The beverages selection is various.</label></th>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+
+                <br><!--Survey about website-->
+                <p class="text">Please evaluate the website of our restaurant.</p>
+                <br>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th>Strong Disagree</th>
+                            <th>Disagree</th>
+                            <th>Neutural</th>
+                            <th>Agree</th>
+                            <th>Strongly Agree</th>
+                        </tr>
+                        <tr>
+                            <th><label>The overall design of the website is organized and tidy.</label></th>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                            <td><input type="radio" name="accurately" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>The design of the website is creative.</label></th>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                            <td><input type="radio" name="prepared" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>The functions of the website meet my requirement.</label></th>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                            <td><input type="radio" name="appropriate" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>I am satisfied with the website customer service.</label></th>
+                            <td><input type="radio" name="started" class="size"></td>
+                            <td><input type="radio" name="started" class="size"></td>
+                            <td><input type="radio" name="started" class="size"></td>
+                            <td><input type="radio" name="started" class="size"></td>
+                            <td><input type="radio" name="started" class="size"></td>
+                        </tr>
+                        <tr>
+                            <th><label>I would recommend this platform to my friend.</label></th>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                            <td><input type="radio" name="knowledge" class="size"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                
+            </form>
+            <br>
+            <br>
+            <br><br><br>
+                <div class="type"><!--Textarea for type suggestion-->
+                    <br>
+                    <h4 class="heading">Any suggestion to improve our restaurant?</h4>
+                    <br>
+                    <textarea class="area" name="comments" id="comment"></textarea> <br><br>
+                </div>
+                <div class="type">
+                    <br>
+                    <p class="satisfication">Any suggestion to improve our website?</p>
+                    <br>
+                    <textarea name="comments" id="comment"></textarea>
+                    <br><br>
+                </div>
+                <br>
+                <div class="button"><!-- Submit button, validation will be performed once clicked-->
+                    <button type="submit" value="submit" onclick="validation()">SUBMIT</button>
+                </div>
+                <br>
+            
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About us</h4>
+                    <ul>
+                        <li><a href="faqmain.html">FAQ</a></li>
+                        <li><a href="dinein.html">Dine in</a></li>
+                        <li><a href="orders&delivery.html">Order & Delivery</a></li>
+                        <li><a href="payments&security.html">Payment & Security</a></li>
+    
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online shop</h4>
+                    <ul>
+                        <li><a href="menu.html">Menu</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100086430368598" target="_blank" id="fb"><i class="fab fa-facebook-f"></i></a> &nbsp;
+                        <a href="https://github.com/BrewHouse22" id="twitter" target="_blank"><i class="fab fa-github"></i></a> &nbsp;
+                        <a href="https://instagram.com/thebrewhouse2022?r=nametag" id="insta" target="_blank"><i class="fab fa-instagram"></i></a> &nbsp;
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Locate us</h4>
+                    <div class="social-links">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.53663221214!2d101.72591861475746!3d3.2155572976588167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20College%20(TAR%20UC)!5e0!3m2!1sen!2smy!4v1664632361704!5m2!1sen!2smy" 
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="feedback.js"></script>
+<script src="header.js"></script>
+<script src="https://kit.fontawesome.com/2ef51f6b1b.js" crossorigin="anonymous"></script>
+</body>
+</html>
