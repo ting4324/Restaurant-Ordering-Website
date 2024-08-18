@@ -10,11 +10,12 @@ This is a school project done by 5 members including me.
 
 How to Run
 Clone the repository:
-git clone https://github.com/yourusername/the-brewhouse.git
+git clone (https://github.com/ting4324/Restaurant-Ordering-Website.git)
 
 Open home.html in your web browser.
 
 Example Screenshots of modules:
+
 Menu:
 ![image](https://github.com/user-attachments/assets/dec017ca-fb06-4873-b3d4-22e3c632d0a4)
 
