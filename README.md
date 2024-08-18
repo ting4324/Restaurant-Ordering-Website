@@ -4,6 +4,7 @@ Features:
 Interactive Menu: Browse through food and drink categories.
 Customizable Orders: Add, modify, or remove items from the cart.
 Order Summary: Review items before placing an order.
+and more...
 
 This is a school project done by 5 members including me.
 
@@ -23,6 +24,8 @@ Item details:
 
 Cart:
 ![image](https://github.com/user-attachments/assets/70dd1b41-af4e-4a58-bf20-39c2fe18f93a)
+
+
 
 
 
