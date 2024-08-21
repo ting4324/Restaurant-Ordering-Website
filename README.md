@@ -6,7 +6,7 @@ Customizable Orders: Add, modify, or remove items from the cart.
 Order Summary: Review items before placing an order.
 and more...
 
-This is a school project done by few members including me.
+This is a school project done by 5 members including me.
 
 How to Run
 Clone the repository:
